@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img.asset {
+                display:none;
+            }
+            img.flavor{
+                position:absolute; 
+                transform:scale(1.4)
+            }
+            #flavor{
+                background:url("/Assets/Misc/DakeBomb_Favicon.png");
+                background-size:10%;
+                position:fixed;
+                left:0px;
+                width:100vw;
+                height:100vh;
+                z-index:-1
+            }
+            body,html{
+                height:100%;
+                overflow: hidden;
+                align-items:center;
+                justify-content: center;
+                display:flex;
+                margin:0px;
+                background-color:black;
+            }
+            p{
+                position:fixed;
+                right:0px;
+                display:inline;
+            }
+            #debugx{
+                top:10%;
+            }
+            canvas{
+                background-color:black;
+                border:white 9px solid;
+                position:absolute;
+                margin:auto;
+            }
+        </style>
+        <title>DAKE BOMB!!</title>
+        <link rel="icon" type="image/icon" href="/Assets/Misc/DakeBomb_Favicon.png">
+    </head>
+    <body>
+        <p id="debug"></p>
+        <p id="debugx"></p>
+        <canvas id="canvas" width="800" height="800"></canvas>
+        <img class="asset" id="player1" src="/Assets/Player1/Cat.jpg">
+        <img class="asset" id="player2" src="/Assets/Player2/Dog.jpg">
+        <img class = "asset" id="background" src="/Assets/Misc/DakeBomb_Mat.png">
+        <div id="flavor">
+        
+
+        
+    </body>
+    <script src="/Scripts/Movement_2.js"></script>
+    <script src="/Scripts/Background.js"></script>
+    <script src="/Scripts/Collision.js"></script>
+    <script src="/Scripts/Face_Angle.js"></script>
+    <script src="/Scripts/Movement_1.js"></script>
+    <script src="/Scripts/Background.js"></script>
+    <script src="/Scripts/Attacks_1.js"></script>
+    <script src="/Scripts/Attacks_2.js"></script>
+    <script src="/Scripts/Scrambling.js"></script>
+    <script src="/Scripts/Sprawl.js"></script>
+    
+</html>
